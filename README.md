@@ -11,12 +11,12 @@ This Google Cast demo app shows how to cast videos from an Android device in a w
 
 ## Setup Instructions
 1. Get a Google Cast device and get it set up for development: https://developers.google.com/cast/docs/developers#setup_for_development.
-1. [Optional] Register an application on the Developers Console [http://cast.google.com/publish](http://cast.google.com/publish "Google Cast Developer Console").
+2. [Optional] Register an application on the Developers Console [http://cast.google.com/publish](http://cast.google.com/publish "Google Cast Developer Console").
   The easiest would be to use the Styled Media Receiver option. You will get an App ID when you finish registering your application. This project uses a
   published Application ID that can be used to run the app without using your own ID but if you need to do any console debugging, you would need to have your own ID.
-1. Import the project into Android Studio or use gradle to build the project.
-1. Compile and deploy to your Android device.
-1. This sample includes a published app id in the res/values/strings.xml file so the project can be built and run without a need
+3. Import the project into Android Studio or use gradle to build the project.
+4. Compile and deploy to your Android device.
+5. This sample includes a published app id in the res/values/strings.xml file so the project can be built and run without a need
   to register an app id. If you want to use your own receiver (which is required if you need to debug the receiver),
   update "app_id" in that file with your own app id.
 
@@ -26,11 +26,11 @@ It is recommended to implement and run automated testing for your Android sender
 
 #### How to run test cases
 1. Update `cast_test_target_device` in [res/values/cast_test.xml] with your Google Cast device name.
-1. Connect to a physical Android device and make sure your device is unlocked.
-1. Follow [Espresso setup instructions](https://developer.android.com/training/testing/espresso/setup#set-up-environment) to turn off system animations under **Settings > Developer options**.
-1. In Android Studio, click the **Sync Project with Gradle Files** button.
-1. Go to [CastTestSuite.java](androidTest/com/google/sample/cast/refplayer/CastTestSuite.java), right click and **Run 'CastTestSuite'** or right click to run single test case (ex: [testCastingVideo()](androidTest/com/google/sample/cast/refplayer/BasicCastUITest.java)).
-1. \[Optional\] Adjust timeout setting in [res/values/cast_test.xml] if necessary.
+2. Connect to a physical Android device and make sure your device is unlocked.
+3. Follow [Espresso setup instructions](https://developer.android.com/training/testing/espresso/setup#set-up-environment) to turn off system animations under **Settings > Developer options**.
+4. In Android Studio, click the **Sync Project with Gradle Files** button.
+5. Go to [CastTestSuite.java](androidTest/com/google/sample/cast/refplayer/CastTestSuite.java), right click and **Run 'CastTestSuite'** or right click to run single test case (ex: [testCastingVideo()](androidTest/com/google/sample/cast/refplayer/BasicCastUITest.java)).
+6. \[Optional\] Adjust timeout setting in [res/values/cast_test.xml] if necessary.
 
 #### UI testing frameworks
 * [Espresso](https://developer.android.com/training/testing/espresso/)

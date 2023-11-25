@@ -16,7 +16,8 @@
   -->
 <resources>
     <!-- For Testing -->
-    <string name="cast_test_target_device">Den TV</string>
+
+    <string name="RebelCast">Den TV</string>
     <integer name="cast_test_short_timeout">5</integer>
     <integer name="cast_test_max_timeout">20</integer>
     <string name="cast_test_video_1">Big Buck Bunny</string>
